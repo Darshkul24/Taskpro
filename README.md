@@ -1,4 +1,4 @@
-# Taskpro - 🚀 Streamlining Task Management 📈
+# 🚀 Taskpro 📈
 
 Taskpro is a state-of-the-art web-based task management system that empowers individuals and teams to tackle their daily workload with ease. Whether you're a professional looking to boost productivity or a team aiming for excellence, Taskpro is your go-to solution. 
 
