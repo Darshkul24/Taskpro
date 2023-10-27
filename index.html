@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/4.22.1/css/patternfly.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/4.22.1/css/patternfly-additions.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Your custom CSS -->
+    <title>Taskpro</title>
+</head>
+<body class="pf-c-page">
+    <header class="pf-c-page__header pf-m-light">
+        <h1 class="pf-c-title pf-m-xl">Taskpro<h1>
+    </header>
+    <main class="pf-c-page__main">
+        <div class="pf-c-content">
+            <div class="pf-c-content__main">
+                <div class="pf-c-form pf-m-horizontal">
+                    <div>
+                        <label class="pf-c-form__label" for="taskInput">Task Description</label>
+                        <input type="text" id="taskInput" class="pf-c-form-control" placeholder="Enter a task">
+                        <label class="pf-c-form__label" for="dueDate">Due Date</label>
+                        <input type="date" id="dueDate" class="pf-c-form-control">
+                        <button id="addTask" class="pf-c-button pf-m-primary">Add Task</button>
+                    </div>
+                </div>
+                <ul id="taskList" class="pf-c-list pf-m-compact"></ul>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer class="pf-c-page__footer pf-m-light">
+        <p class="pf-c-page__footer-text">Taskpro &copy; 2023. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
