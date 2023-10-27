@@ -29,13 +29,15 @@ Taskpro is a state-of-the-art web-based task management system that empowers ind
 
     Open the index.html file in your web browser to start using Taskpro.
 
-🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please see our Contribution Guidelines for details on how to get involved.
-📄 License
+
+## 📄 License
 
 Taskpro is open-source and is licensed under the MIT License. You're free to use, modify, and distribute Taskpro according to the terms of the license.
-✉️ Contact
+
+## ✉️ Contact
 
 If you have any questions, feedback, or require support, please feel free to reach out to our dedicated team at contact@taskpro.com. We value your input and are committed to delivering the best task management experience.
 
