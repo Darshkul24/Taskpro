@@ -1,6 +1,6 @@
 const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
-const saveTasksToLocalStorage = () => {
+const saveTaskToLocalStorage = () => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
 };
 
@@ -10,7 +10,7 @@ const addTask = () => {
     const taskText = taskInput.value;
     const dueDate = dueDateInput.value;
 
-    if (taskText.trim() === '') {
+    if (taskText.trim() === ''){
         alert('Task description cannot be empty');
         return;
     }
@@ -26,7 +26,7 @@ const addTask = () => {
     taskInput.value = '';
     dueDateInput.value = '';
 
-    saveTasksToLocalStorage();
+    saveTaskToLocalStorage();
     renderTasks();
 };
 
@@ -36,24 +36,24 @@ const toggleTaskStatus = (taskId) => {
         task.completed = !task.completed;
     }
 
-    saveTasksToLocalStorage();
+    saveTaskToLocalStorage();
     renderTasks();
 };
 
 const deleteTask = (taskId) => {
     const taskIndex = tasks.findIndex((task) => task.id === taskId);
-    if (taskIndex !== -1) {
+    if (taskIndex !== -1){
         tasks.splice(taskIndex, 1);
     }
 
-    saveTasksToLocalStorage();
+    saveTaskToLocalStorage();
     renderTasks();
 };
 
 const renderTasks = () => {
     const taskList = document.getElementById('taskList');
     taskList.innerHTML = '';
-
+    
     tasks.forEach((task) => {
         const listItem = document.createElement('li');
         listItem.innerHTML = `
