@@ -1,35 +1,3 @@
-/* Styling for the checkbox and text */
-#taskList li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#taskList input[type="checkbox"] {
-    margin-right: 10px;
-    width: 20px; /* Set a fixed width for the checkbox */
-    height: 20px; /* Set a fixed height for the checkbox */
-}
-
-/* Styling for the checkbox label */
-#taskList input[type="checkbox"] + span {
-    text-decoration: none;
-    font-size: 1rem; /* Adjust the font size as needed */
-    color: #333; /* Set the color for unchecked tasks */
-}
-
-#taskList input[type="checkbox"]:checked + span {
-    text-decoration: line-through;
-    color: #888; /* Set the color for completed tasks */
-}
-
-/* Styling for the delete button */
 #taskList button {
     background-color: #ff5050;
     color: #fff;
@@ -39,7 +7,6 @@
     cursor: pointer;
 }
 
-/* Styling for completed tasks */
 #taskList span.completed {
     text-decoration: line-through;
     color: #888;
@@ -49,13 +16,13 @@
     background-color: #ff3333;
 }
 
-/* Add additional CSS styles for the container and input fields */
-    .container {
+.container {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
 }
 
-#taskInput, #dueDate {
+#taskInput,
+#dueDate {
     border: 1px solid #ccc;
     padding: 8px;
     border-radius: 4px;
@@ -74,11 +41,11 @@
 #addTask:hover {
     background-color: #005cbf;
 }
-/* Set the background gradient */
+
 body {
     background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
-/* Styling for completed tasks */
+
 #taskList li.completed span {
     text-decoration: line-through;
     color: #888;
